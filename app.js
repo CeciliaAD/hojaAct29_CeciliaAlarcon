@@ -2,7 +2,7 @@ const express = require("express");
 const handlebars = require("express-handlebars");
 const controlador = require("./routes/controlador.js");
 const handlers_ln = require("./lib/handlers/handlers_ln.js");
-
+const cors = require("cors");
 const port = process.env.PORT || 3000;
 
 const app = express();

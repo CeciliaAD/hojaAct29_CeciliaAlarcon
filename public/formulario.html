@@ -2,16 +2,21 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Busca tu medicina</title>
+		<title>The Guardian articles</title>
+		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
+		<script
+			type="text/javascript"
+			src="/src/respuestas.precompiled.js"
+		></script>
 		<script type="text/javascript" src="/src/valida.js" async></script>
 	</head>
 	<body>
-		<form action="/" method="POST">
-			<p>
-				<label for="dolencia">Dolencia:</label>
-				<input type="search" name="dolencia" id="dolencia" />
-			</p>
-			<p><input type="submit" id="botonSubmit" /></p>
-		</form>
+		<p>
+			<label for="word">Search word:</label>
+			<input type="search" name="word" id="word" />
+		</p>
+		<p><input type="submit" id="botonSubmit" /></p>
+
+		<ul id="answers"></ul>
 	</body>
 </html>
