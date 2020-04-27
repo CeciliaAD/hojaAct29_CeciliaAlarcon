@@ -2,21 +2,24 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
+		<meta property="og:url" />
 		<title>The Guardian articles</title>
-		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
-		<script
-			type="text/javascript"
-			src="/src/respuestas.precompiled.js"
-		></script>
 		<script type="text/javascript" src="/src/valida.js" async></script>
+		<link rel="stylesheet" href="/src/css/estilo.css" />
 	</head>
 	<body>
-		<p>
-			<label for="word">Search word:</label>
-			<input type="search" name="word" id="word" />
-		</p>
-		<p><input type="submit" id="botonSubmit" /></p>
-
-		<ul id="answers"></ul>
+		<div class="container">
+			<header class="header">
+				<img src="/img/theGuardian.png" alt="logo" />
+				<h1>Search published articles by word.</h1>
+			</header>
+			<section class="section">
+				<p>
+					<label for="word">Word:</label>
+					<input type="search" name="word" id="word" />
+				</p>
+				<p><input type="submit" id="botonSubmit" value="Submit" /></p>
+			</section>
+		</div>
 	</body>
 </html>
